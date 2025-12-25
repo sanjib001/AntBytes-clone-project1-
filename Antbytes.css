@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background-color: #F9FAFB;
+}
+
+/* utility classes */
+.cap {
+    text-transform: capitalize;
+}
+
+header {
+    height: 80px;
+    padding: 0px 24px;
+    color: #fff;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+
+header .mobile-nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo .logo-text {
+    font-size: 2rem;
+    font-weight: 800;
+    color: black;
+}
+
+.mobile-nav span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* main */
+main {
+    padding: 40px 24px;
+}
+
+/* hero section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    color: #334153;
+    background-color: #EEEFF1;
+    border-radius: 16px;
+    width: fit-content;
+
+}
+
+@keyframes colorfliker {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
+
+.section-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.section-icon::before {
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #00C753;
+    border-radius: 50%;
+    animation: colorfliker 2s infinite;
+}
+
+.section-heading {
+    font-size: 3.1rem;
+    font-weight: 700;
+}
+
+.section-para {
+    font-size: 1.8rem;
+    color: #4B5769;
+    line-height: 1.6;
+}
+
+.buttons{
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.btn{
+    font-size: 20px;
+    padding: 16px 32px;
+    border: 3px solid #000;
+    background-color: #fff;
+    border-radius: 16px;
+}
+.btn-black {
+    background-color: #000;
+    color: #fff;
+}
+
