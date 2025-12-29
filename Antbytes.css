@@ -31,6 +31,28 @@ body {
     text-align: left;
 }
 
+img {
+    object-fit: cover;
+}
+
+.card-transition {
+    transition: transform 500ms linear 0s;
+}
+
+.card-transition:hover {
+    transform: translateY(-4px);
+    transition: transform 500ms linear 0s;
+}
+
+.card-transition .icon-transition {
+    transition: scale 500ms linear 0s;
+}
+
+.card-transition:hover .icon-transition {
+    scale: 1.1;
+    transition: scale 500ms linear 0s;
+}
+
 header {
     height: 80px;
     padding: 0px 24px;
@@ -231,10 +253,10 @@ main {
 
 /* section service */
 .services {
-    padding-top: 96px;
+    padding: 96px 0px;
 }
 
-.services-list{
+.services-list {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -245,13 +267,9 @@ main {
     background-color: #F8F8FA;
     padding: 24px;
     border-radius: 30px;
-    transition: transform 500ms linear 0s;
 }
 
-.service-cards:hover{
-    transform: translateY(-4px);
-    transition: transform 500ms linear 0s;
-}
+
 
 .service-icon {
     margin-bottom: 20px;
@@ -263,13 +281,9 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 12px;
-    transition: scale 500ms linear 0s;
+
 }
 
-.service-cards:hover .service-icon{
-    scale: 1.1;
-    transition: scale 500ms linear 0s;
-}
 
 .service-heading {
     font-size: 1.8rem;
@@ -290,4 +304,88 @@ main {
     flex-direction: column;
     gap: 8px;
     color: #4B5769;
+}
+
+/* trustedby section */
+.trustedby {
+    padding: 64px 0px;
+}
+
+.partners-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.partners-card {
+    flex-basis: 100%;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 16px;
+    border: 1px solid #d9d9d9;
+}
+
+/* portfolio section */
+.portfolio {
+    padding: 96px 0px;
+}
+
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d9d9d9;
+    border-radius: 16px;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+
+.portfolio-desc {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.portfolio-heading {
+    font-size: 2rem;
+}
+
+.portfolio-para {
+    font-size: 1.4rem;
+}
+
+.portfolio-tags {
+    display: flex;
+    gap: 16px;
+}
+
+.tags {
+    font-size: 1.3rem;
+    padding: 4px 10px;
+}
+
+.prevent-overflow {
+    overflow: hidden;
+}
+
+/* about us section */
+.about-us {
+    padding: 96px 0px;
+}
+
+.about-list {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.about-upper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
 }
