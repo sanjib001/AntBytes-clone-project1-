@@ -73,19 +73,19 @@ header .mobile-nav {
     justify-content: space-between;
 }
 
-.mobile-nav .logo {
+.logo {
     display: flex;
     align-items: center;
     gap: 6px;
 }
 
-.logo .logo-text {
+.logo-text {
     font-size: 2rem;
     font-weight: 800;
     color: black;
 }
 
-.mobile-nav span {
+.logo span {
     font-size: 2rem;
     font-weight: 700;
     color: white;
@@ -388,4 +388,53 @@ main {
     flex-direction: row;
     justify-content: space-around;
     gap: 10px;
+}
+
+/* footer  */
+footer {
+    border-top: 1px solid #d9d9d9;
+    padding: 40px 24px;
+    background-color: #EEEFF1;
+}
+
+.footer-main svg {
+    height: 35px;
+    background-color: #d9d9d9;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.footer-main svg:hover {
+    color:#fff;
+    background-color: #000;
+}
+.footer-main .logo {
+    margin-bottom: 16px;
+}
+
+.footer-svg {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+.footer-heading {
+    font-size: 1.8rem;
+    margin: 18px 0px 6px;
+}
+
+.footer-para {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    color: #334153;
+}
+
+footer ul li {
+    list-style: none;
+    line-height: 1.7;
+}
+
+.footer-bottom{
+    padding-top: 32px;
+    border-top: 1px solid #d9d9d9;
 }
